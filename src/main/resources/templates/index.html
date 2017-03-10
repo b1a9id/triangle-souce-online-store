@@ -21,11 +21,10 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">TRIANGLE SAUCE</a>
+					<a class="navbar-brand" th:href="@{/}">TRIANGLE SAUCE</a>
 				</div>
 				<div class="collapse navbar-collapse" id="navbar-ex-collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="#">Home</a></li>
 						<li><a href="#">Brands</a></li>
 						<li><a href="#">Categories</a></li>
 						<li><a href="#">MyPage</a></li>
@@ -87,9 +86,6 @@
 	<div class="section">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-6 col-md-5">
-					<img th:src="@{/image/monument.jpg}" class="center-block img-responsive" />
-				</div>
 				<div class="col-xs-6 col-md-7">
 					<h1 class="text-primary">About Us</h1>
 					<p class="lead">人との繋がりに重点を置き、図形で表す事。
@@ -98,16 +94,16 @@
 						これが、私達の考える人間関係の図形になります。 また、TRYとANGLEの含みも"TRIANGLE
 						SAUCE"には含まれているのです。</p>
 				</div>
+				<div class="col-xs-6 col-md-5">
+					<img th:src="@{/image/monument.jpg}" class="center-block img-responsive" />
+				</div>
 			</div>
 		</div>
 	</div>
 	<div class="section">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
-					<img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive" />
-				</div>
-				<div class="col-md-6">
+				<div class="col-md-12">
 					<h1 class="text-primary">Shop Info
 						<br />
 					</h1>
@@ -115,20 +111,20 @@
 						<table>
 							<tbody>
 							<tr>
-								<th>店名</th>
-								<td>トライアングルソース</td>
+								<th class="col-md-8">店名</th>
+								<td class="col-md-4">トライアングルソース</td>
 							</tr>
 							<tr>
-								<th>住所</th>
-								<td>〒150-0022 東京都渋谷区恵比寿南1-11-17　1F</td>
+								<th class="col-md-8">住所</th>
+								<td class="col-md-4">〒150-0022 東京都渋谷区恵比寿南1-11-17　1F</td>
 							</tr>
 							<tr>
-								<th>電話番号</th>
-								<td>03-5773-4050</td>
+								<th class="col-md-8">電話番号</th>
+								<td class="col-md-4">03-5773-4050</td>
 							</tr>
 							<tr>
-								<th>メールアドレス</th>
-								<td>info@triangle-sauce.com</td>
+								<th class="col-md-8">メールアドレス</th>
+								<td class="col-md-4">info@triangle-sauce.com</td>
 							</tr>
 							</tbody>
 						</table>
@@ -139,13 +135,21 @@
 	</div>
 	<div class="section">
 		<div class="container">
-			<div class="row">
+			<div class="row col-md-8">
 				<div class="col-md-12">
 					<a href="#">運営会社</a>
 					<a href="#">ショッピングガイド</a>
 					<a href="#">ご利用規約</a>
 					<a href="#">個人情報のお取り扱い</a>
 					<a href="#">特定商取引の表示</a>
+				</div>
+			</div>
+			<div class="row col-md-4">
+				<div class="col-md-12">
+					<a href="https://www.facebook.com/TRIANGLESAUCE"><i class="fa fa-2x fa-fw fa-facebook"></i></a>
+					<a href="https://twitter.com/trianglesauce"><i class="fa fa-2x fa-fw fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-2x fa-fw fa-instagram"></i></a>
+					<a href="http://ameblo.jp/triangle-sauce/entry-12250453116.html"><i class="fa fa-2x fa-fw fa-book"></i></a>
 				</div>
 			</div>
 		</div>
