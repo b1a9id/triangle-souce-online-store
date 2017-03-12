@@ -1,0 +1,158 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="ja">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script type="text/javascript" th:src="@{/webjars/jquery/3.1.1-1/jquery.min.js}"></script>
+	<script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
+	<link th:href="@{/webjars/font-awesome/4.7.0/css/font-awesome.min.css}" rel="stylesheet" type="text/css" />
+	<link th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.css}" rel="stylesheet" type="text/css" />
+	<link th:href="@{/css/index.css}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="cover">
+		<div class="navbar">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" th:href="@{/}">TRIANGLE SAUCE</a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-ex-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Brands</a></li>
+						<li><a href="#">Categories</a></li>
+						<li><a href="#">MyPage</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="cover-image" th:style="'background-image : url(' + @{/image/index.jpg} + ');'"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 class="text-primary">TRIANGLE SAUCE</h1>
+					<p class="text-primary">Since 2009</p>
+					<br />
+					<br />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="text-center text-primary">New Lineup</h1>
+					<br />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-md-3">
+					<a><img th:src="@{/image/mock/newlineup1.jpg}" class="center-block img-responsive" /></a>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<a><img th:src="@{/image/mock/newlineup2.jpg}" class="center-block img-responsive" /></a>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<a><img th:src="@{/image/mock/newlineup3.jpg}" class="center-block img-responsive" /></a>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<a><img th:src="@{/image/mock/newlineup4.jpg}" class="center-block img-responsive" /></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-md-3">
+					<a><img th:src="@{/image/mock/newlineup5.jpg}" class="center-block img-responsive" /></a>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<a><img th:src="@{/image/mock/newlineup6.jpg}" class="center-block img-responsive" /></a>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<a><img th:src="@{/image/mock/newlineup7.jpg}" class="center-block img-responsive" /></a>
+				</div>
+				<div class="col-xs-6 col-md-3">
+					<a><img th:src="@{/image/mock/newlineup8.jpg}" class="center-block img-responsive" /></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6 col-md-7">
+					<h1 class="text-primary">About Us</h1>
+					<p class="lead">人との繋がりに重点を置き、図形で表す事。
+						"父+母+子"、"僕たち+お客様+ショップ"、"地域+環境+そこで働く人々" などなど・・・
+						ロゴに秘めた思いは、三角形の形とそこにぶらさがるチェーンのような"SAAUCCE"の文字。
+						これが、私達の考える人間関係の図形になります。 また、TRYとANGLEの含みも"TRIANGLE
+						SAUCE"には含まれているのです。</p>
+				</div>
+				<div class="col-xs-6 col-md-5">
+					<img th:src="@{/image/monument.jpg}" class="center-block img-responsive" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="text-primary">Shop Info
+						<br />
+					</h1>
+					<div>
+						<table>
+							<tbody>
+							<tr>
+								<th class="col-md-8">店名</th>
+								<td class="col-md-4">トライアングルソース</td>
+							</tr>
+							<tr>
+								<th class="col-md-8">住所</th>
+								<td class="col-md-4">〒150-0022 東京都渋谷区恵比寿南1-11-17　1F</td>
+							</tr>
+							<tr>
+								<th class="col-md-8">電話番号</th>
+								<td class="col-md-4">03-5773-4050</td>
+							</tr>
+							<tr>
+								<th class="col-md-8">メールアドレス</th>
+								<td class="col-md-4">info@triangle-sauce.com</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+			<div class="row col-md-8">
+				<div class="col-md-12">
+					<a href="#">運営会社</a>
+					<a href="#">ショッピングガイド</a>
+					<a href="#">ご利用規約</a>
+					<a href="#">個人情報のお取り扱い</a>
+					<a href="#">特定商取引の表示</a>
+				</div>
+			</div>
+			<div class="row col-md-4">
+				<div class="col-md-12">
+					<a href="https://www.facebook.com/TRIANGLESAUCE"><i class="fa fa-2x fa-fw fa-facebook"></i></a>
+					<a href="https://twitter.com/trianglesauce"><i class="fa fa-2x fa-fw fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-2x fa-fw fa-instagram"></i></a>
+					<a href="http://ameblo.jp/triangle-sauce/entry-12250453116.html"><i class="fa fa-2x fa-fw fa-book"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
