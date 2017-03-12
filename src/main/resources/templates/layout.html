@@ -1,0 +1,38 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="ja">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script type="text/javascript" th:src="@{/webjars/jquery/3.1.1-1/jquery.min.js}"></script>
+	<script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
+	<link th:href="@{/webjars/font-awesome/4.7.0/css/font-awesome.min.css}" rel="stylesheet" type="text/css" />
+	<link th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.css}" rel="stylesheet" type="text/css" />
+	<link th:href="@{/css/index.css}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div th:fragment="footer-index" class="navbar navbar-default navbar-static-top">
+		<div class="section">
+			<div class="container">
+				<div class="row col-md-8">
+					<div class="col-md-12">
+						<a href="#">運営会社</a>
+						<a href="#">ショッピングガイド</a>
+						<a href="#">ご利用規約</a>
+						<a href="#">個人情報のお取り扱い</a>
+						<a href="#">特定商取引の表示</a>
+					</div>
+				</div>
+				<div class="row col-md-4">
+					<div class="col-md-12">
+						<a href="https://www.facebook.com/TRIANGLESAUCE"><i class="fa fa-2x fa-fw fa-facebook"></i></a>
+						<a href="https://twitter.com/trianglesauce"><i class="fa fa-2x fa-fw fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-2x fa-fw fa-instagram"></i></a>
+						<a href="http://ameblo.jp/triangle-sauce/entrylist.html"><i class="fa fa-2x fa-fw fa-book"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
