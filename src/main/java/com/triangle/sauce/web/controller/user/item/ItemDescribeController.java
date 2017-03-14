@@ -1,4 +1,4 @@
-package com.triangle.sauce.user.item;
+package com.triangle.sauce.web.controller.user.item;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
