@@ -25,7 +25,7 @@
 				</div>
 				<div class="collapse navbar-collapse" id="navbar-ex-collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Brands</a></li>
+						<li><a th:href="@{/brands}">Brands</a></li>
 						<li><a href="#">Categories</a></li>
 						<li><a href="#">MyPage</a></li>
 						<li><a href="#">Contact</a></li>
@@ -133,26 +133,6 @@
 			</div>
 		</div>
 	</div>
-	<div class="section">
-		<div class="container">
-			<div class="row col-md-8">
-				<div class="col-md-12">
-					<a href="#">運営会社</a>
-					<a href="#">ショッピングガイド</a>
-					<a href="#">ご利用規約</a>
-					<a href="#">個人情報のお取り扱い</a>
-					<a href="#">特定商取引の表示</a>
-				</div>
-			</div>
-			<div class="row col-md-4">
-				<div class="col-md-12">
-					<a href="https://www.facebook.com/TRIANGLESAUCE"><i class="fa fa-2x fa-fw fa-facebook"></i></a>
-					<a href="https://twitter.com/trianglesauce"><i class="fa fa-2x fa-fw fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-2x fa-fw fa-instagram"></i></a>
-					<a href="http://ameblo.jp/triangle-sauce/entry-12250453116.html"><i class="fa fa-2x fa-fw fa-book"></i></a>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div th:replace="layout::footer-index"></div>
 </body>
 </html>
