@@ -1,0 +1,154 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="ja">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<script type="text/javascript" th:src="@{/webjars/jquery/3.1.1-1/jquery.min.js}"></script>
+	<script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
+	<link th:href="@{/webjars/font-awesome/4.7.0/css/font-awesome.min.css}" rel="stylesheet" type="text/css"/>
+	<link th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.css}" rel="stylesheet" type="text/css"/>
+	<link th:href="@{/css/shop/sctact.css}" rel="stylesheet" type="text/css"/>
+
+	<title th:text="#{shop.sctact.title}">特定商取引に関する法律に基づく表記</title>
+</head>
+<body>
+	<div class="navbar" style="background-color: #8d6449;">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+				        data-target="#navbar-ex-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" th:href="@{/}">TRIANGLE SAUCE</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-ex-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a th:href="@{/brands}">Brands</a>
+					</li>
+					<li>
+						<a href="#">Categories</a>
+					</li>
+					<li>
+						<a href="#">MyPage</a>
+					</li>
+					<li>
+						<a th:href="@{/contact}">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div>
+						<h1 class="text-primary" th:text="#{shop.sctact.title}">特定商取引に関する法律に基づく表記</h1>
+					</div>
+					<ul class="breadcrumb">
+						<li>
+							<a th:href="@{/}">Home</a>
+						</li>
+						<li class="active" th:text="#{shop.sctact.title}">特定商取引に関する法律に基づく表記</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<table class="table">
+						<tbody>
+						<tr>
+							<th>販売業者</th>
+							<td th:text="#{shop.sctact.company}">株式会社scrap&amp;build</td>
+						</tr>
+						<tr>
+							<th>運営責任者</th>
+							<td th:text="#{shop.sctact.responsible}">服部　篤史</td>
+						</tr>
+						<tr>
+							<th>住所</th>
+							<td th:text="#{shop.sctact.address}">〒150-0022 東京都渋谷区恵比寿南1-11-17　青木ビル1F</td>
+						</tr>
+						<tr>
+							<th>電話番号</th>
+							<td th:text="#{shop.sctact.tel}">03-5773-4050</td>
+						</tr>
+						<tr>
+							<th>FAX番号</th>
+							<td th:text="#{shop.sctact.fax}">03-5773-4050</td>
+						</tr>
+						<tr>
+							<th>メールアドレス</th>
+							<td th:text="#{shop.sctact.email}">info@triangle-sauce.com</td>
+						</tr>
+						<tr>
+							<th>URL</th>
+							<td th:text="#{shop.sctact.url}">http://www.triangle-sauce.com</td>
+						</tr>
+						<tr>
+							<th>商品代金以外の料金</th>
+							<td>
+								<ul>
+									<li th:text="#{shop.sctact.fee.tax}">消費税8%</li>
+									<li th:text="#{shop.sctact.fee.delivery}">配送料（税込10,800円以上お買上の場合には送料無料です。）</li>
+									<li th:text="#{shop.sctact.fee.transfer}">振込手数料（お振込ご利用時）</li>
+									<li th:text="#{shop.sctact.fee.cash}">代引き手数料（代金引き換えご利用時）</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th>支払方法</th>
+							<td>
+								<ul>
+									<li th:text="#{shop.sctact.method.bank}">クレジットカード決済</li>
+									<li th:text="#{shop.sctact.method.bank}">銀行振込</li>
+									<li th:text="#{shop.sctact.method.cash}">代引き決済</li>
+									<li th:text="#{shop.sctact.method.cash.writing}">現金書留払い</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th>支払期限</th>
+							<td>
+								<ul>
+									<li>お振込の場合はご注文後のご案内メールより5日以内に当店指定の振込口座にお代金をお支払い下さい。</li>
+									<li>現金書留の場合はご注文後のご案内メールより5日以内に店着を期限とさせて頂きます。</li>
+								</ul>
+								<p>※ご注文確定メール到着より5日を経過した場合は自動キャンセルとなりますのでご注意下さい。</p>
+							</td>
+						</tr>
+						<tr>
+							<th>引渡し時期</th>
+							<td>
+								<ul>
+									<li>お振込の場合は、入金確認後、原則として3日以内発送</li>
+									<li>代引きの場合は、最短即日発送の3日以内発送</li>
+									<li>現金書留の場合は書留店着、入金確認後、原則として3日以内発送</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th>返品・交換について</th>
+							<td>
+								<p>商品不良による返品・交換は、商品到着後3日以内に、お電話またはEメールから事前にご連絡頂いた後、商品をご返送下さい。</p>
+								<p>詳しくは、<a th:href="@{/shop/guide}">ショッピングガイド</a>をご覧ください。</p>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div th:replace="layout::footer-index"></div>
+</body>
+</html>

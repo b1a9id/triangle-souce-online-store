@@ -14,22 +14,27 @@
 	<div th:fragment="footer-index" class="navbar navbar-default navbar-static-top">
 		<div class="section">
 			<div class="container">
-				<div class="row col-md-8">
+				<div class="row col-md-9">
 					<div class="col-md-12">
-						<a th:href="@{/shop/about}">運営会社</a>
-						<a th:href="@{/shop/guide}">ショッピングガイド</a>
-						<a th:href="@{/shop/rule}">ご利用規約</a>
-						<a th:href="@{/shop/privacy}">個人情報のお取り扱い</a>
-						<a href="#">特定商取引の表示</a>
+						<a th:href="@{/shop/about}" th:text="#{shop.about.title}">運営会社</a>
+						<a th:href="@{/shop/guide}" th:text="#{shop.guide.title}">ショッピングガイド</a>
+						<a th:href="@{/shop/rule}" th:text="#{shop.rule.title}">ご利用規約</a>
+						<a th:href="@{/shop/privacy}" th:text="#{shop.privacy.title}">個人情報のお取り扱い</a>
+						<a th:href="@{/shop/sctact}" th:text="#{shop.sctact.title}">特定商取引の表示</a>
 					</div>
 				</div>
-				<div class="row col-md-4">
+				<div class="row col-md-3">
 					<div class="col-md-12">
 						<a href="https://www.facebook.com/TRIANGLESAUCE"><i class="fa fa-2x fa-fw fa-facebook"></i></a>
 						<a href="https://twitter.com/trianglesauce"><i class="fa fa-2x fa-fw fa-twitter"></i></a>
 						<a href="#"><i class="fa fa-2x fa-fw fa-instagram"></i></a>
 						<a href="http://ameblo.jp/triangle-sauce/entrylist.html"><i class="fa fa-2x fa-fw fa-book"></i></a>
 					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<p class="text-center">Copyright c2005-2017TRIANGLE SAUCE / トライアングルソース All rights reserved.</p>
 				</div>
 			</div>
 		</div>

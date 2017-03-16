@@ -26,4 +26,9 @@ public class ShopController {
 	public String privacy() {
 		return "shop/privacy";
 	}
+
+	@GetMapping("/sctact")
+	public String sctact() {
+		return "shop/sctact";
+	}
 }
