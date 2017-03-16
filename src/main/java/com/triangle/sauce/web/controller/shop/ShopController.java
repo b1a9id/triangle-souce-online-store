@@ -16,4 +16,9 @@ public class ShopController {
 	public String guide() {
 		return "shop/guide";
 	}
+
+	@GetMapping("/rule")
+	public String rule() {
+		return "shop/rule";
+	}
 }
