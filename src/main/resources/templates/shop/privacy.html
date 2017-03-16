@@ -1,0 +1,201 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="ja">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<script type="text/javascript" th:src="@{/webjars/jquery/3.1.1-1/jquery.min.js}"></script>
+	<script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
+	<link th:href="@{/webjars/font-awesome/4.7.0/css/font-awesome.min.css}" rel="stylesheet" type="text/css"/>
+	<link th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.css}" rel="stylesheet" type="text/css"/>
+	<link th:href="@{/css/shop/rule.css}" rel="stylesheet" type="text/css"/>
+
+	<title th:text="#{shop.privacy.title}">プライバシーポリシー</title>
+</head>
+<body>
+	<div class="navbar">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+				        data-target="#navbar-ex-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" th:href="@{/}">TRIANGLE SAUCE</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-ex-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active">
+						<a th:href="@{/brands}">Brands</a>
+					</li>
+					<li>
+						<a href="#">Categories</a>
+					</li>
+					<li>
+						<a href="#">MyPage</a>
+					</li>
+					<li>
+						<a th:href="@{/contact}">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="text-primary" th:text="#{shop.privacy.title}">プライバシーポリシー</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p>当社が運営する「TRIANGLE SAUCE」（以下「当ウェブサイト」）では、個人情報を適切に取り扱うことが重要であると認識しており、
+						以下の個人情報保護方針に従って個人情報の適正な収集、利用、管理等に取り組みます。
+						当ウェブサイトをご利用いただく際には本方針を十分にご理解いただき、同意をいただける場合に限って個人情報をご提供いただければ幸いです。</p>
+					<p><span>個人情報の照会、修正または削除等および第三者提供の停止を希望される場合、</span><a th:href="@{/contact}">お問い合わせ</a><span>よりお問合せ下さい。</span></p>
+				</div>
+				<div class="col-md-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">１.個人情報の定義</h3>
+						</div>
+						<div class="panel-body">
+							<ul>
+								<li>個人情報とは、個人に関する情報であり、氏名、生年月日、性別、電話番号、電子メールアドレス、職業、勤務先等、特定の個人を識別し得る情報をいいます。</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">２.個人情報の収集・利用</h3>
+						</div>
+						<div class="panel-body">
+							<p>当社は、以下の目的のため、その範囲内においてのみ、個人情報を収集・利用いたします。
+								当社による個人情報の収集・利用は、ご利用者様の自発的な提供によるものであり、
+								ご利用者様が個人情報を提供された場合は、当社が本方針に則って個人情報を利用することをご利用者様が許諾したものとします。</p>
+							<ul>
+								<li>当社のサービスを提供または停止するうえで業務上連絡が必要な場合</li>
+								<li>カタログやDMの送付、商品発送や連絡等の通信販売および当社営業のご案内に使用いたします。</li>
+								<li>サービスの解約後、業務遂行上で必要となる当社からの問い合わせ、確認、およびサービス向上のためのアンケート実施</li>
+								<li>各種のお問い合わせ対応</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">３.個人情報の管理</h3>
+						</div>
+						<div class="panel-body">
+							<ul>
+								<li>当社は、個人情報の漏洩、滅失、毀損等を防止するために、個人情報保護管理責任者を設置し、十分な安全保護に努め、
+									また、個人情報を正確に、また最新なものに保つよう、お預かりした個人情報の適切な管理を行います。</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">４.個人情報の利用および第三者提供</h3>
+						</div>
+						<div class="panel-body">
+							<ul>
+								<li>当社は、ご利用者様の事前の同意を得ることなく、個人情報を上記の目的以外に利用いたしません。
+									また、法令に基づく場合等正当な理由によらない限り、ご利用者様の事前の同意を得ることなく、個人情報を第三者に開示・提供することはありません。</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">５.委託先の監督</h3>
+						</div>
+						<div class="panel-body">
+							<ul>
+								<li>当社は、ご利用者様へ提供するサービスの業務遂行上、委託先にご利用者様の個人情報を提供する場合、
+									当該委託先と守秘義務に関する契約を締結することで、個人情報保護を義務づけるとともに、当該委託先がご利用者様の個人情報を適切に取り扱うよう、指導、監督いたします。</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">６.リンクについて</h3>
+						</div>
+						<div class="panel-body">
+							<ul>
+								<li>当ウェブサイトは、いくつかの外部サイトへのリンクを含みますが、個人情報を共有するものではありません。
+									リンク先ウェブサイトにて行われる個人情報の収集に関しては当社では一切責任を負えませんので、リンク先ウェブサイトの個人情報保護方針を参照のうえ、ご確認下さい。</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">７.適切な管理措置</h3>
+						</div>
+						<div class="panel-body">
+							<ul>
+								<li>個人情報保護に関する社内外セミナー等を実施し、あるいは参加し個人情報の管理体制を一層強化して行きます。</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">８.法令等の遵守</h3>
+						</div>
+						<div class="panel-body">
+							<ul>
+								<li>当社は、個人情報の取り扱いに関して、個人情報保護法をはじめとする個人情報に関する法令およびその他の規範を遵守します。</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">９.継続的な個人情報保護に関する取り組み</h3>
+						</div>
+						<div class="panel-body">
+							<ul>
+								<li>当社は、ご利用者様の個人情報を適切に取り扱うよう、個人情報保護に関する取り組みを定め、
+									従事者への教育を実施し、適切な取り扱いを維持するとともに、当該取り組みに関して継続的に見直し、改善していきます。</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">１０.情報内容の照会等および第三者提供の停止及び問い合わせ</h3>
+						</div>
+						<div class="panel-body">
+							<ul>
+								<li>当社は、ご利用者様が当社にご提供いただいた個人情報の照会、修正または削除等および第三者提供の停止を希望される場合は、
+									ご本人であることを確認させていただいたうえで、合理的な範囲ですみやかに対応させていただきます。</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div th:replace="layout::footer-index"></div>
+</body>
+</html>
