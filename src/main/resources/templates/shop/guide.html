@@ -1,0 +1,76 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="ja">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<script type="text/javascript" th:src="@{/webjars/jquery/3.1.1-1/jquery.min.js}"></script>
+	<script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
+	<link th:href="@{/webjars/font-awesome/4.7.0/css/font-awesome.min.css}" rel="stylesheet" type="text/css"/>
+	<link th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.css}" rel="stylesheet" type="text/css"/>
+	<link th:href="@{/css/shop/guide.css}" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<div class="navbar">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+				        data-target="#navbar-ex-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" th:href="@{/}">TRIANGLE SAUCE</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-ex-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active">
+						<a th:href="@{/brands}">Brands</a>
+					</li>
+					<li>
+						<a href="#">Categories</a>
+					</li>
+					<li>
+						<a href="#">MyPage</a>
+					</li>
+					<li>
+						<a th:href="@{/contact}">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="text-primary">ショッピングガイド</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">会員登録について</h3>
+						</div>
+						<div class="panel-body">
+							<ul>
+								<li>登録がなくてもサイト上の商品情報等はご覧いただけますが、商品のご注文の際にはご登録が必要となります。</li>
+								<li>年会費、登録料、更新料、維持費などの料金は一切かかりません。</li>
+								<li>ご登録いただいたEメールアドレスがお客様IDとなります。お客様登録完了後、ご登録いただいたEメールアドレスへ当社より確認のＥメールを送信いたします。</li>
+								<li>ご登録内容の変更は、「会員登録内容変更」にてお願いいたします。</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div th:replace="layout::footer-index"></div>
+</body>
+</html>
