@@ -12,8 +12,22 @@
 </head>
 <body>
 	<div th:replace="layout::header-contact"></div>
-	<div th:replace="layout::bread-contact"></div>
 	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div>
+						<h1 class="text-primary">お問い合わせ</h1>
+					</div>
+					<ul class="breadcrumb">
+						<li>
+							<a th:href="@{/}">Home</a>
+						</li>
+						<li class="active">Contact</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		<div class="container">
 			<form class="form-horizontal" role="form" method="post" th:action="@{/contact?step=confirm}" th:object="${form}">
 				<div class="row">
