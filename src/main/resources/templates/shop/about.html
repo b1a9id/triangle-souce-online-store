@@ -1,0 +1,95 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="ja">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<script type="text/javascript" th:src="@{/webjars/jquery/3.1.1-1/jquery.min.js}"></script>
+	<script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
+	<link th:href="@{/webjars/font-awesome/4.7.0/css/font-awesome.min.css}" rel="stylesheet" type="text/css"/>
+	<link th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.css}" rel="stylesheet" type="text/css"/>
+	<link th:href="@{/css/shop/about.css}" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<div class="navbar" style="background-color: #8d6449;">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+				        data-target="#navbar-ex-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" th:href="@{/}">TRIANGLE SAUCE</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-ex-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a th:href="@{/brands}">Brands</a>
+					</li>
+					<li>
+						<a href="#">Categories</a>
+					</li>
+					<li>
+						<a href="#">MyPage</a>
+					</li>
+					<li>
+						<a th:href="@{/contact}">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="text-primary">運営会社</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<table class="table">
+						<tbody>
+						<tr>
+							<th>店名</th>
+							<td th:text="|#{shop.about.name.en} / #{shop.about.name.ja}|">TRIANGLE SAUCE/トライアングルソース</td>
+						</tr>
+						<tr>
+							<th>会社名</th>
+							<td th:text="#{shop.about.company}">株式会社scrap&amp;build</td>
+						</tr>
+						<tr>
+							<th>住所</th>
+							<td th:text="#{shop.about.address}">〒150-0022 東京都渋谷区恵比寿南1-11-17　青木ビル1F</td>
+						</tr>
+						<tr>
+							<th>電話番号</th>
+							<td th:text="#{shop.about.tel}">03-5773-4050</td>
+						</tr>
+						<tr>
+							<th>FAX番号</th>
+							<td th:text="#{shop.about.fax}">03-5773-4050</td>
+						</tr>
+						<tr>
+							<th>メールアドレス</th>
+							<td th:text="#{shop.about.email}">info@triangle-sauce.com</td>
+						</tr>
+						<tr>
+							<th>営業時間</th>
+							<td th:text="|#{shop.about.start-time} ~ #{shop.about.end-time}|">11:00 ～ 20:00</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div th:replace="layout::footer-index"></div>
+</body>
+</html>
