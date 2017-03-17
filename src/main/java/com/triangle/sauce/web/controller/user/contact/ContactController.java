@@ -85,7 +85,7 @@ public class ContactController {
 
 	@GetMapping(params = "step=finish")
 	public String finish(
-			@ModelAttribute(FORM_MODEL_KEY) ContactForm form,
+			@Validated @ModelAttribute(FORM_MODEL_KEY) ContactForm form,
 			BindingResult errors,
 			SessionStatus status) {
 		if (errors.hasErrors()) {
