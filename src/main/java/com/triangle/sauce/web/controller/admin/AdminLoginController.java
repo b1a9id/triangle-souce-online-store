@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/_admin")
-public class LoginController {
+public class AdminLoginController {
 	@GetMapping("/login")
 	public String index() {
 		return "admin/login";

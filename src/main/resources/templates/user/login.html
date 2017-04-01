@@ -1,0 +1,104 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="ja">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<script type="text/javascript" th:src="@{/webjars/jquery/3.1.1-1/jquery.min.js}"></script>
+	<script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
+	<link th:href="@{/webjars/font-awesome/4.7.0/css/font-awesome.min.css}" rel="stylesheet" type="text/css"/>
+	<link th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.css}" rel="stylesheet" type="text/css"/>
+	<link th:href="@{/css/user/login.css}" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+	<div class="navbar">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+				        data-target="#navbar-ex-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" th:href="@{/}">TRIANGLE SAUCE</a>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-ex-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active">
+						<a th:href="@{/brands}">Brands</a>
+					</li>
+					<li>
+						<a href="#">Categories</a>
+					</li>
+					<li>
+						<a href="#">MyPage</a>
+					</li>
+					<li>
+						<a th:href="@{/contact}">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-xs-12 text-center">
+					<h1 class="text-primary">マイページ</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-offset-2 col-md-12">
+					<div class="col-md-8">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title text-center">Login</h3>
+							</div>
+							<div class="panel-body">
+								<form class="form-horizontal" role="form" method="post" th:action="@{/mypage/login}">
+									<div class="form-group">
+										<div class="col-sm-3">
+											<i class="fa fa-2x fa-user fa-fw"></i>
+											<label class="control-label">LOGIN ID</label>
+										</div>
+										<div class="col-sm-9">
+											<input type="email" class="form-control" placeholder="LOGIN ID" />
+										</div>
+									</div>
+									<div class="form-group has-feedback">
+										<div class="col-sm-3">
+											<i class="fa fa-2x fa-lock fa-fw"></i>
+											<label class="control-label">PASSWORD</label>
+										</div>
+										<div class="col-sm-9">
+											<input type="password" class="form-control" placeholder="Password" />
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="row com-sm-12">
+											<div class="col-sm-offset-4 col-sm-2">
+												<button type="submit" class="btn btn-default">Login</button>
+											</div>
+											<div class="col-sm-3">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" />Remember me</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
