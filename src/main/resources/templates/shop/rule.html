@@ -13,36 +13,7 @@
 	<title th:text="#{shop.rule.title}">ご利用規約</title>
 </head>
 <body>
-	<div class="navbar">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-				        data-target="#navbar-ex-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" th:href="@{/}">TRIANGLE SAUCE</a>
-			</div>
-			<div class="collapse navbar-collapse" id="navbar-ex-collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="active">
-						<a th:href="@{/brands}">Brands</a>
-					</li>
-					<li>
-						<a href="#">Categories</a>
-					</li>
-					<li>
-						<a href="#">MyPage</a>
-					</li>
-					<li>
-						<a th:href="@{/contact}">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+	<div th:replace="layout::nav-index"></div>
 	<div class="section">
 		<div class="container">
 			<div class="row">

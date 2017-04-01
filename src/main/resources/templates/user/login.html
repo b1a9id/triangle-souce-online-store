@@ -8,7 +8,7 @@
 	<script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
 	<link th:href="@{/webjars/font-awesome/4.7.0/css/font-awesome.min.css}" rel="stylesheet" type="text/css"/>
 	<link th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.css}" rel="stylesheet" type="text/css"/>
-	<link th:href="@{/css/admin/login.css}" rel="stylesheet" type="text/css"/>
+	<link th:href="@{/css/user/login.css}" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 	<div class="navbar">
@@ -45,7 +45,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-xs-12 text-center">
-					<h1 class="text-primary">TRIANGLE SAUCE管理画面</h1>
+					<h1 class="text-primary">マイページ</h1>
 				</div>
 			</div>
 		</div>
@@ -60,7 +60,7 @@
 								<h3 class="panel-title text-center">Login</h3>
 							</div>
 							<div class="panel-body">
-								<form class="form-horizontal" role="form" method="post" th:action="@{/_admin/login}">
+								<form class="form-horizontal" role="form" method="post" th:action="@{/mypage/login}">
 									<div class="form-group">
 										<div class="col-sm-3">
 											<i class="fa fa-2x fa-user fa-fw"></i>
